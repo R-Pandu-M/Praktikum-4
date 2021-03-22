@@ -1,0 +1,30 @@
+<html>
+    <head>
+	    <!-- deklarasi jQuery -->
+	    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	    <script type="text/javascript">
+            // command untuk jQuery
+		    $(document).ready(function(){
+			    $(".Sembunyi").click(function(){$("#pic").hide("slow")}); //button untuk sembunyikan foto1
+			    $(".Tampil").click(function(){$("#pic").show("slow")}); //button untuk tampilkan foto1
+			    $(".Sembunyi2").click(function(){$("#pic2").hide("slow")});
+			    $(".Tampil2").click(function(){$("#pic2").show("slow")});
+		    });
+	    </script>
+	    <title>Sembunyi-Muncul Gambar :D</title>
+    </head>
+    <body>
+        <button class="Sembunyi">Sembunyikan Gambar</button><!-- button sembunyikan yang tampil dihalaman web -->
+        <button class="Tampil">Tampilkan Gambar</button>
+        <br>
+        <br>
+        <img id="pic"src="kocheng.jpeg">
+        <br>
+        <br>
+        <button class="Sembunyi2">Sembunyikan Gambar</button><!-- button sembunyikan yang tampil dihalaman web -->
+        <button class="Tampil2">Tampilkan Gambar</button>
+        <br>
+        <br>
+        <img id="pic2"src="nyimak.jpeg">
+    </body>
+</html>

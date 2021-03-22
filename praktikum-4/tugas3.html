@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <!-- deklarasi jQuery -->
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#fadein").click(function(){$(".square").fadeIn("slow")}); //memberi efek fade In
+                $("#fadeout").click(function(){$(".square").fadeOut("slow")}); //memberi efek fade OUt
+                $("#fadeto").click(function(){$(".square").fadeTo("slow", 0.3)}); //memberi efek fade To
+            });
+        </script>
+        <!-- desain tampilan kotak -->
+        <style type="text/css">
+            .square { 
+                width: 250px; 
+                height: 150px; 
+                background-color:yellow; 
+            }
+        </style>
+        <title>Warna Kotak Fade-fade an</title>
+    </head>
+    <body>
+        <!-- menampilkan kotak -->
+        <div class="square"></div> 
+        <br>
+        <br>
+        <button id="fadein"> Fade In </button> 
+        <button id="fadeout"> Fade Out </button> 
+        <button id="fadeto"> Fade To </button> 
+    </body>
+</html>
